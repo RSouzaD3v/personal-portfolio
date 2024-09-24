@@ -19,7 +19,7 @@ const MobileHeader = ({list, isHidden}: MobileHeaderProps) => {
                     {list.map((item: MenuItem) => (
                         <li className='hover:bg-white/10 p-2 
                         rounded-md' key={item.id}>
-                            <a className='flex items-center gap-1' href="">
+                            <a className='flex items-center gap-1' href={item.link}>
                                 {<item.icon />}
                                 {item.title}
                             </a>
