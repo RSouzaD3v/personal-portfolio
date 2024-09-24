@@ -54,7 +54,7 @@ const Header = () => {
     ];
 
     return (
-        <header className='flex fixed top-0 left-0 w-full justify-between items-center bg-white/5 p-3'>
+        <header className='flex backdrop-blur-sm z-50 fixed top-0 left-0 w-full justify-between items-center bg-white/5 p-3'>
             <div>
                 <Image width={60} height={60} src={Logo} alt='logo' />
             </div>
