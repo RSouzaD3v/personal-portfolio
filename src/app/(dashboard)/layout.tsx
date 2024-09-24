@@ -1,22 +1,16 @@
-import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
-export const metadata: Metadata = {
-  title: "RsouzaD3v | Tecnologia e Desenvolvimento",
-  description: "Melhor maneira de criar seu site ou ter ajuda no desenvolvimento!",
-};
 
 export default function RootLayout({
   children,
@@ -28,6 +22,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="mb-20">
+            <Header />
+        </div>
         {children}
       </body>
     </html>

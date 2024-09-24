@@ -31,30 +31,30 @@ const Header = () => {
             id: 1,
             title: 'Home',
             icon: IoMdHome,
-            link: ''
+            link: '/'
         },
         {
             id: 2,
             title: 'Blog',
             icon: IoMdBook,
-            link: ''
+            link: 'blog'
         },
         {
             id: 3,
             title: 'API',
             icon: AiFillApi,
-            link: ''
+            link: 'apiPage'
         },
         {
             id: 4,
             title: 'Comunidade',
             icon: CgCommunity,
-            link: ''
+            link: 'comunidade'
         },
     ];
 
     return (
-        <header className='flex justify-between items-center bg-white/5 p-3'>
+        <header className='flex fixed top-0 left-0 w-full justify-between items-center bg-white/5 p-3'>
             <div>
                 <Image width={60} height={60} src={Logo} alt='logo' />
             </div>
@@ -62,7 +62,7 @@ const Header = () => {
             <ul className='hidden md:flex justify-around gap-5'>
                 {list.map((item) => (
                     <li className='hover:bg-white/10 p-2 rounded-md' key={item.id}>
-                        <a className='flex items-center gap-1' href="">
+                        <a className='flex items-center gap-1' href={item.link}>
                             {<item.icon />}
                             {item.title}
                         </a>
