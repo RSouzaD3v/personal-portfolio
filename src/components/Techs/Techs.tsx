@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Techs = () => {
     return (
-        <div className="p-10 text-center">
-            <h1 className="text-[50px] font-bold">ESPECIALIDADES</h1>
+        <div className="p-10 flex flex-col justify-center items-center">
+            <h1 className="text-[40px] md:text-[50px] font-bold">ESPECIALIDADES</h1>
 
             <div className="flex items-center justify-center gap-5 flex-wrap my-5">
                 {listTechs.map((item, index) => (

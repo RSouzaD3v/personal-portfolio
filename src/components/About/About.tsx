@@ -4,7 +4,7 @@ import logo from "@/assets/Logo-Cor-WhiteBlack.png";
 
 const About = () => {
     return (
-        <div className="p-10 flex justify-between items-center w-full h-screen">
+        <div className="p-10 flex justify-center md:justify-between items-center w-full h-screen">
             <div>
                 <h1 className="text-[50px] font-bold">Sobre</h1>
                 <p className="text-[16px]">
