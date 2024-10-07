@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "RsouzaD3v | Tecnologia e Desenvolvimento",
-  description: "Melhor maneira de criar seu site ou ter ajuda no desenvolvimento!",
+  title: "Portal da Verdade | Oficial",
+  description: "Entenda porque não expor nossas crianças!",
 };
 
 export default function RootLayout({
