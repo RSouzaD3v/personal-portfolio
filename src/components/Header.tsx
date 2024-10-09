@@ -3,7 +3,7 @@ import logo from "../../public/logo.png";
 
 const Header = () => {
     return (
-        <header className="flex items-center justify-between p-5">
+        <header className="flex items-center justify-between p-5 backdrop-blur-sm bg-black/5">
             <div>
                 <Image width={80} src={logo} alt="Logo" />
             </div>
